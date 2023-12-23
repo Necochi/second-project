@@ -1,30 +1,27 @@
-body {
-    margin: 0;
+* {
+    max-width: 1800px;
+    font-size: 20px;
+    font-family: 'Gilroy', sans-serif;
+}
 
-    background-color: #f9f9f9;
-    font-family: Arial, Helvetica, sans-serif;
+main {
+    background-color: #ac4444;
 }
 
 .nav {
     width: 100%;
-    height: 174px;
-    margin: 0;
-
+    height: 6em;
+    position: fixed;
+    top: 0;
+    padding-top: 1.5em;
+    
     background-color: #fff;
-}
-
-.nav .container {
-    height: inherit;
-    margin: 22px 80px 38px 80px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    margin: 0 auto;
 
-.menu-item {
-    display: flex;
-    align-items: center;
+    font-weight: 500;
 }
 
 a {
@@ -43,27 +40,19 @@ a {
     border-radius: 6px;
 
     padding: 12px 27px;
-    margin: 0  0 0 23px;
+    margin-left:23px;
 }
 
 .description__download{
     display: flex;
     justify-content: space-between;
-
-    margin: 20px 40px 0;
+    position: relative;
+    top: 10em;
+    
 }
 
 .description {
-    max-width: 30%;
-
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
-    vertical-align: bottom;
-}
-
-.description .car-map_image {
-    justify-content: space-between;
+    max-width: 50%;
 }
 
 .download__button {
@@ -108,4 +97,8 @@ a {
 .play-market {
     height: 34px;
     width: 34px;
+}
+
+.car-map__image {
+    height: 29rem;
 }
